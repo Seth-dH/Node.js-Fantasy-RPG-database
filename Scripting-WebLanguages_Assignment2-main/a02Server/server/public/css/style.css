@@ -1,0 +1,270 @@
+:root{
+  --primary: #FA7B3C;
+  --secondairy: #FA9C3C;
+  --tertirary: #FAB73C;
+  --primary-2: #CFCFCF;
+  --secondairy-2: #FAFAFA;
+  --text-primary: #4A4A4A;
+}
+
+*{
+  margin: 0;
+}
+
+header{
+  background-color: var(--text-primary);
+  color: var(--tertirary);
+}
+
+#title{
+  text-align: center;
+  font-size: 50px;
+}
+
+#pokedex-entry-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#name-container{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#desc-container{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#desc-input{
+  resize: none;
+  width: 100%;
+}
+
+#height-container{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-content: center;
+  justify-self: end;
+}
+
+#height-input-feet, #height-input-inches{
+  width: 20px;
+}
+
+#weight-container{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-content: center;
+  justify-self: start;
+}
+
+#weight-input{
+  width: 40px;
+}
+
+#type-container{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+}
+
+#stats-feild-container{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+}
+
+#stats-feild{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2px;
+  border-radius: 5px;
+  border-color: var(--secondairy);
+}
+
+.bst-input{
+  grid-column-start: 2;
+  width: 30px;
+}
+
+#submit-button{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#cancel-button{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#reset-button{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0px;
+}
+
+form {
+  background-color: var(--primary-2);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pokedex-display{
+  background-color: var(--tertirary);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokedex-entry{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  align-items: center; 
+  justify-content: stretch; 
+  align-items: stretch;
+  column-gap: 10px;
+  row-gap: 5px;
+  background-color: var(--primary-2);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.dex-no{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-self: start;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  background-color: var(--text-primary);
+  color: var(--secondairy);
+}
+
+.dex-name, .dex-desc, .dex-height, .dex-weight, .dex-type, .dex-bst{
+  padding: 5px;
+  background-color: var(--secondairy-2);
+  border-radius: 5px;
+}
+
+.dex-name{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+.dex-desc{
+  grid-column-start:3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: var(--secondairy-2);
+}
+
+.dex-height{
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.dex-weight{
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.dex-type{
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.dex-bst{
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.dex-delete-button, .dex-edit-button{
+  grid-row-start: 5;
+}
+
+select{
+  width: 75px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+button{
+  margin: 5px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--secondairy);
+}
+
+select:hover{
+  border-color: var(--secondairy);
+}
+
+textarea, input[type="text"], input[type="number"]{
+  padding: 3px;
+}
+
+textarea, input[type="text"], input[type="number"]:focus{
+  outline-color: var(--secondairy);
+}
+
+/* Hides the arrows on number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondairy);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f8ac61;
+}

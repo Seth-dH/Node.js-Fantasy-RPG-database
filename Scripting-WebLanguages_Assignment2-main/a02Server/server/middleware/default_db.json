@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Pichu",
+      "desc": "Despite its small size, it can zap even adult humans. However, if it does so, it also surprises itself.",
+      "height_ft": "1",
+      "height_in": "0",
+      "weight": "4",
+      "type1": "Electric",
+      "type2": "None",
+      "hp": "20",
+      "atk": "40",
+      "def": "15",
+      "spatk": "35",
+      "spdef": "35",
+      "spd": "60"
+    },
+    {
+      "id": "2",
+      "name": "Pikachu",
+      "desc": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+      "height_ft": "1",
+      "height_in": "4",
+      "weight": "13",
+      "type1": "Electric",
+      "type2": "None",
+      "hp": "35",
+      "atk": "55",
+      "def": "40",
+      "spatk": "50",
+      "spdef": "50",
+      "spd": "90"
+    },
+    {
+      "id": "2",
+      "name": "Riachu",
+      "desc": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+      "height_ft": "2",
+      "height_in": "7",
+      "weight": "66",
+      "type1": "Electric",
+      "type2": "None",
+      "hp": "60",
+      "atk": "90",
+      "def": "55",
+      "spatk": "90",
+      "spdef": "80",
+      "spd": "110"
+    }
+  ]
+}

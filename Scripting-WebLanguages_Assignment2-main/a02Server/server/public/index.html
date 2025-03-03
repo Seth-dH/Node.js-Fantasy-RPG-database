@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Creator</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+    <!-- Add additional meta tags, links, or scripts here -->
+</head>
+<body>
+
+    <header>
+        <!-- Navigation, logo, or header content goes here -->
+        <h1 id="title">Pokedex Creator</h1>
+    </header>
+
+    <main>
+        <!-- This is the template file for your project. -->
+        <!-- Begin adding your application's content here: forms, lists, tables, etc. -->
+        <div>
+            <form  id="pokedex-entry-form" action="">
+                <div id="name-container">                
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input">
+                </div>
+
+                <div id="desc-container">
+                    <label for="desc-input">Description:</label><br>
+                    <textarea name="Pokemon Description" id="desc-input" rows="5"></textarea><br>
+                </div>
+
+                <div id="height-container">
+                    <label for="height-input-feet">Height:</label>
+                    <input type="number" id="height-input-feet">
+                    <label for="height-input-feet">'</label>
+                    <input type="number" id="height-input-inches">
+                    <label for="height-input-inches">"</label>
+                </div>
+
+                <div id="weight-container">
+                    <label for="weight-input">Weight:</label>
+                    <input type="number" id="weight-input">
+                    <label for="weight-input">lbs.</label>
+                </div>
+
+                <div id="type-container">
+                    <label for="type-1-select">Type:</label>
+                    <select name="type 1" id="type-1-select">
+                        <option value="bug">Bug</option>
+                        <option value="dark">Dark</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="electric">Electric</option>
+                        <option value="fairy">Fairy</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="fire">Fire</option>
+                        <option value="flying">Flying</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="grass">Grass</option>
+                        <option value="ground">Ground</option>
+                        <option value="ice">Ice</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="poison">Poison</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="rock">Rock</option>
+                        <option value="steel">Steel</option>
+                        <option value="water">Water</option>
+                    </select>
+                    <select name="type 2" id="type-2-select" value="none">
+                        <option value="none">None</option>
+                        <option value="bug">Bug</option>
+                        <option value="dark">Dark</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="electric">Electric</option>
+                        <option value="fairy">Fairy</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="fire">Fire</option>
+                        <option value="flying">Flying</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="grass">Grass</option>
+                        <option value="ground">Ground</option>
+                        <option value="ice">Ice</option>
+                        <option value="normal">Normal</option>
+                        <option value="poison">Poison</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="rock">Rock</option>
+                        <option value="steel">Steel</option>
+                        <option value="water">Water</option>
+                    </select>
+                </div>
+
+                <div id="stats-feild-container">
+                    <fieldset id="stats-feild">
+                        <legend >Base Stats</legend>
+                        <label for="hp-input">Hp</label>
+                        <input type="number" id="hp-input" class="bst-input">
+                        <label for="atk-input">Attack</label>
+                        <input type="number" id="atk-input" class="bst-input">
+                        <label for="def-input">Defence</label>
+                        <input type="number" id="def-input" class="bst-input">
+                        <label for="spatk-input">Sp. Atk</label>
+                        <input type="number" id="spatk-input" class="bst-input">
+                        <label for="spdef-input">Sp. Def</label>
+                        <input type="number" id="spdef-input" class="bst-input">
+                        <label for="spd-input">Speed</label>
+                        <input type="number" id="spd-input" class="bst-input">
+                    </fieldset>
+                </div>
+
+                <button type="submit" id="submit-button">Add Pokedex Entry</button>
+                <button id="cancel-button">Cancel</button>
+                <button id="reset-button">Reset Pokedex</button>
+            </form>
+
+        </div>
+        <div id="pokedex-display">
+            <h1>Pokedex</h1>
+            <!-- <div class="pokedex-entry">
+                <div  class="dex-no">
+                    <h1>001</h1>
+                </div>
+                <h2 class="dex-name">Name</h2>
+
+                <p class="dex-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste distinctio, placeat soluta sequi laudantium animi corporis illo voluptas officia temporibus tempora reprehenderit consectetur? Quasi iusto voluptas quidem voluptates rerum.</p>
+                
+                <div class="dex-height">
+                    <h2>Height</h2> 
+                    <p>6'2"</p>
+                </div>
+                <div class="dex-weight">
+                    <h2>Weight</h2> <p>220 lbs</p>
+                </div>
+                <div class="dex-type">
+                    <h2>Type</h2> <p>Normal Fighting</p>
+                </div>
+                <div class="dex-bst">
+                    <p>Hp: 0</p>
+                    <p>Atk: 0</p>
+                    <p>Def: 0</p>
+                    <p>Sp. Atk: 0</p>
+                    <p>Sp. Def: 0</p>
+                    <p>Spd: 0</p>
+                </div>
+
+                <Button class="dex-delete-button">Delete</Button>
+                <Button class="dex-edit-button">Edit</Button> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content like contact information, social links, or copyright notices goes here -->
+    </footer>
+    <script type="module">
+        // This is my toaster component in case you can use it
+        // It should come before your script file
+        // It has three modes: add (green), update (blue), remove (red)
+        // To use:
+        //  toaster.show(mode, message, delay);
+        //  mode: string with he possible values "add", "update", "remove"
+        //  message: string with a message you want to display on screen
+        //  delay: a number in milliseconds
+        // Example:
+        //  toaster.show('add', `Item ${item.name} added...`, 2000);
+        import { toaster } from './js/toaster.js'; 
+        window.toaster = toaster; 
+    </script>
+    <script src="js/index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
